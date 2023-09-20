@@ -2,6 +2,7 @@ package Modelo;
 
 public class empleado {
 
+	//Atributos
 	String nombre;
 	String apellidos;
 	String dni;
@@ -9,9 +10,11 @@ public class empleado {
 	String titulacionMasAlta;
 	int numSeguridad;
 	int numCuentaBancaria;
+	int numRegistro;
 	
+	//Constructores
 	public empleado(String nombre, String apellidos, String dni, String fechaNac, String titulacionMasAlta,
-			int numSeguridad, int numCuentaBancaria) {
+			int numSeguridad, int numCuentaBancaria,int numRegistro) {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -20,8 +23,9 @@ public class empleado {
 		this.titulacionMasAlta = titulacionMasAlta;
 		this.numSeguridad = numSeguridad;
 		this.numCuentaBancaria = numCuentaBancaria;
+		this.numRegistro=numRegistro;
 	}
-	
+	//Geters y Seters
 	public String getNombre() {
 		return nombre;
 	}
@@ -52,7 +56,10 @@ public class empleado {
 	public int getNumCuentaBancaria() {
 		return numCuentaBancaria;
 	}
-
+	public int getNumRegistro() {
+		return numRegistro;
+	}
+	//Metodos
 	@Override
 	public String toString() {
 		return nombre + ";" + apellidos + ";" + dni + ";" + fechaNac
