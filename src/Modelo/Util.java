@@ -1,5 +1,6 @@
 package Modelo;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Util {
@@ -25,11 +26,11 @@ public class Util {
 			System.out.println("Error: "+e.getMessage());
 			ok=false;
 		}
-		}while(!ok||num>min||num>max);
+		}while(!ok||num<min||num>max);
 		return num;
 	}
 	//Reccorrera la lista para darle un id a la persona
-	public static int daNumero(List <Object> lista) {
+	public static int daNumero(List <empleado> lista) {
 		//pedimos la lista y la recorremos
 		int id=0;
 		 for(int i=0;i<lista.size();i++) {
@@ -39,5 +40,15 @@ public class Util {
 				 id=j;
 		 }
 		 return id+1;
+	}
+	//el menu de la aplicacion
+	public static void menu() {
+		System.out.println("--------------------------------------------------");
+		System.out.println("Bienvenido:");
+		System.out.println("1-Ingreso");
+		System.out.println("2-Modificar Empleado");
+		System.out.println("3-Exportar En Un Archivo");
+		System.out.println("0-Salir");
+		System.out.println("--------------------------------------------------");
 	}
 }
