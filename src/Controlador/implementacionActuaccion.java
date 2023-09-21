@@ -40,7 +40,7 @@ public class implementacionActuaccion implements interfazActuaccion {
 		empleados.add(new empleado(nombre,apellidos,dni,fechaNac,titulacion,numeroSeguridad,numCuenta,numeroRegistro));
 		//Excepciones
 		}catch(InputMismatchException  im) {
-			System.out.println("Error: no puso el valor correcto");
+			System.out.println("Error: no puso el valor correcto o el numero es demasiado grande");
 		}
 		catch(NoSuchElementException ns) {
 			System.out.println("Error: puso un numero demasiado grande");
@@ -117,12 +117,14 @@ public class implementacionActuaccion implements interfazActuaccion {
 					switch(num) {
 					case 1:
 						inter.Escribir(pw, empleados.get(i).toString());
+						System.out.println("Se paso lo datos correctamente");
 						break;
 					case 2:
 						//Se hace un bucle para escribir todos los usuarios de la lista
 						for(int e=0;e<empleados.size();e++) {
 							inter.Escribir(pw, empleados.get(e).toString());
 						}
+						System.out.println("Se Paso los datos correctamente");
 						break;
 					}
 					// si encuentra el usuario se pone a true

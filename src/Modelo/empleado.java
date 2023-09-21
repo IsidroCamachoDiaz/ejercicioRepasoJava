@@ -50,12 +50,6 @@ public class empleado {
 	public String getFechaNac() {
 		return fechaNac;
 	}
-	public int getNumSeguridad() {
-		return numSeguridad;
-	}
-	public int getNumCuentaBancaria() {
-		return numCuentaBancaria;
-	}
 	public int getNumRegistro() {
 		return numRegistro;
 	}
