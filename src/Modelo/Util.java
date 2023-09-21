@@ -2,9 +2,8 @@ package Modelo;
 
 import java.util.List;
 import java.util.Scanner;
-
+///Esta clase la uso como herramientas durante varios procesos y la pongo static
 public class Util {
-	//Esta clase la uso como herramientas durante varios procesos y la pongo static
 	
 	//Pedimos un numero y que lo ponga entre los valores
 	public static int CapturaEntero(String texto,int min,int max){

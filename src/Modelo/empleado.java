@@ -1,5 +1,5 @@
 package Modelo;
-
+///El tipo empleado donde lso usuarios tienen sus datos
 public class empleado {
 
 	//Atributos
